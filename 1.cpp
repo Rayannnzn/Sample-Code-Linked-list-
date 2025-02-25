@@ -36,7 +36,7 @@ void Insert(int val){
     }
     else{
         Node * temp = head;
-        while(temp->next == nullptr){
+        while(temp->next != nullptr){
             temp = temp->next;
         }
         temp->next = new Node(val);
@@ -72,6 +72,8 @@ int main(){
     l1.Insert(50);
     l1.Insert(70);
     l1.Insert(100);
+
+    l1.display();
 
 
     return 0;
